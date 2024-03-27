@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--precisamos usar esse link em icones>instalar para usar os icones do bootstrap-->
     <link rel="stylesheet" href="./main.css">
@@ -50,7 +49,7 @@
             </nav>
         </div>
     </header>
-    <div class="container" data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div class="container" data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">                                    <!--o atributo data-bs-smooth-scroll vai concertar o comportamento quando somos levados as seções atraves do cabeçalho-->
         <section id="sobre-o-restaurante">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
@@ -75,27 +74,27 @@
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
-                <div class="pt-5 pb-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="foto so espaço interno do restaurante">
-                            </div>
-                            <div class="col-md-5">
-                                <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae earum, esse aspernatur corrupti aliquid vel, sapiente distinctio, officia iste ipsa nostrum reiciendis minima consequuntur nam quas at doloribus nesciunt.
-                                </p>
-                                <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit molestiae fugit, ipsam laboriosam amet ullam explicabo? Cupiditate aut animi et, explicabo quas laborum nesciunt recusandae blanditiis? Animi, unde fugit.
-                                </p>
-                                <ul>
-                                    <li>item 1</li>
-                                    <li>item 2</li>
-                                    <li>item 3</li>
-                                </ul>
-                            </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="foto so espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-5 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae earum, esse aspernatur corrupti aliquid vel, sapiente distinctio, officia iste ipsa nostrum reiciendis minima consequuntur nam quas at doloribus nesciunt.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit molestiae fugit, ipsam laboriosam amet ullam explicabo? Cupiditate aut animi et, explicabo quas laborum nesciunt recusandae blanditiis? Animi, unde fugit.
+                            </p>
+                            <ul>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -221,28 +220,28 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="nome da entrada">
-                                        <h5 class="text-colored fw-bold mt-2">Nome da entrada</h5>
+                                        <h5 class="text-colored fw-bold mt-2">Petiscos</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
                                         <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="nome da entrada">
-                                        <h5 class="text-colored fw-bold mt-2">Nome da entrada</h5>
+                                        <h5 class="text-colored fw-bold mt-2">Petiscos</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
                                         <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="nome da entrada">
-                                        <h5 class="text-colored fw-bold mt-2">Nome da entrada</h5>
+                                        <h5 class="text-colored fw-bold mt-2">Petiscos</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
                                         <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="nome da entrada">
-                                        <h5 class="text-colored fw-bold mt-2">Nome da entrada</h5>
+                                        <h5 class="text-colored fw-bold mt-2">Petiscos</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
@@ -324,7 +323,7 @@
                     <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 mb-5">
                         <form>
                             <div class="mb-3">
                                 <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
